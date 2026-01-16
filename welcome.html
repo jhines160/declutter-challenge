@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Declutter to Cash Challenge!</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #FDF8F3;
+            --cream-dark: #F5EDE4;
+            --warm-brown: #8B7355;
+            --dark-brown: #5C4A3A;
+            --accent-gold: #C9A86C;
+            --text-dark: #3D3229;
+            --text-medium: #6B5D4D;
+            --white: #FFFFFF;
+            --success-green: #4A7C59;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--cream);
+            color: var(--text-dark);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--success-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+        }
+
+        .success-icon svg {
+            width: 40px;
+            height: 40px;
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 32px;
+            color: var(--dark-brown);
+            margin-bottom: 16px;
+        }
+
+        .intro {
+            font-size: 18px;
+            color: var(--text-medium);
+            margin-bottom: 32px;
+        }
+
+        .steps-box {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 32px;
+            text-align: left;
+            margin-bottom: 32px;
+            border: 1px solid var(--cream-dark);
+        }
+
+        .steps-box h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 20px;
+            color: var(--dark-brown);
+            margin-bottom: 20px;
+        }
+
+        .step {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-number {
+            width: 28px;
+            height: 28px;
+            background: var(--accent-gold);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark-brown);
+            margin-bottom: 4px;
+        }
+
+        .step-content p {
+            font-size: 15px;
+            color: var(--text-medium);
+        }
+
+        .step-content a {
+            color: var(--accent-gold);
+            font-weight: 500;
+        }
+
+        .promo-code-box {
+            background: linear-gradient(135deg, var(--dark-brown) 0%, var(--warm-brown) 100%);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .promo-code-box p {
+            color: rgba(255,255,255,0.9);
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+
+        .promo-code {
+            background: rgba(255,255,255,0.15);
+            border: 2px dashed rgba(255,255,255,0.4);
+            border-radius: 8px;
+            padding: 16px;
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-gold) 0%, #D4B577 100%);
+            color: var(--white);
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 15px rgba(201, 168, 108, 0.35);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(201, 168, 108, 0.45);
+        }
+
+        .help-text {
+            margin-top: 32px;
+            font-size: 14px;
+            color: var(--text-medium);
+        }
+
+        .help-text a {
+            color: var(--accent-gold);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+        </div>
+        
+        <h1>You're In!</h1>
+        <p class="intro">Welcome to the Declutter to Cash Challenge. Here's how to get started right now.</p>
+        
+        <div class="steps-box">
+            <h2>Your Next Steps</h2>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Check Your Email</h3>
+                    <p>I just sent you Day 1 of the challenge. If you don't see it in a few minutes, check your spam folder.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Activate Your 100 Scans</h3>
+                    <p>Use the code below to unlock your scans in the Item Value app.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Download Your Resources</h3>
+                    <p>Grab your <a href="/cheatsheet.pdf" download>What Sells Where Cheat Sheet</a> and <a href="/templates.pdf" download>Listing Templates</a>.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="promo-code-box">
+            <p>Your Item Value Promo Code (100 Scans)</p>
+            <div class="promo-code">CHALLENGE100</div>
+        </div>
+        
+        <a href="https://itemvalue.app?code=CHALLENGE100" class="cta-button">Open Item Value & Start Scanning</a>
+        
+        <p class="help-text">Questions? Email me at <a href="mailto:hello@itemvalue.app">hello@itemvalue.app</a></p>
+    </div>
+</body>
+</html>
