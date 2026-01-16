@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Scan is Ready!</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #FDF8F3;
+            --cream-dark: #F5EDE4;
+            --warm-brown: #8B7355;
+            --dark-brown: #5C4A3A;
+            --accent-gold: #C9A86C;
+            --text-dark: #3D3229;
+            --text-medium: #6B5D4D;
+            --white: #FFFFFF;
+            --success-green: #4A7C59;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--cream);
+            color: var(--text-dark);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .success-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--success-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .success-icon svg {
+            width: 35px;
+            height: 35px;
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 28px;
+            color: var(--dark-brown);
+            margin-bottom: 12px;
+        }
+
+        .intro {
+            font-size: 16px;
+            color: var(--text-medium);
+            margin-bottom: 28px;
+        }
+
+        .scan-box {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 28px;
+            border: 1px solid var(--cream-dark);
+        }
+
+        .scan-box p {
+            font-size: 15px;
+            color: var(--text-medium);
+            margin-bottom: 16px;
+        }
+
+        .scan-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-gold) 0%, #D4B577 100%);
+            color: var(--white);
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 15px rgba(201, 168, 108, 0.35);
+        }
+
+        .scan-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(201, 168, 108, 0.45);
+        }
+
+        .upsell-box {
+            background: linear-gradient(135deg, var(--dark-brown) 0%, var(--warm-brown) 100%);
+            border-radius: 12px;
+            padding: 28px;
+            color: var(--white);
+            margin-bottom: 24px;
+        }
+
+        .upsell-box h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .upsell-box p {
+            font-size: 15px;
+            opacity: 0.95;
+            margin-bottom: 20px;
+        }
+
+        .upsell-options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .upsell-link {
+            display: block;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 8px;
+            padding: 14px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s ease;
+        }
+
+        .upsell-link:hover {
+            background: rgba(255,255,255,0.25);
+        }
+
+        .upsell-link .price {
+            color: var(--accent-gold);
+            font-weight: 700;
+        }
+
+        .help-text {
+            font-size: 13px;
+            color: var(--text-medium);
+        }
+
+        .help-text a {
+            color: var(--accent-gold);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+        </div>
+        
+        <h1>You've Got 1 Scan Ready!</h1>
+        <p class="intro">Let's find out what that item is worth.</p>
+        
+        <div class="scan-box">
+            <p>Click below to open the Item Value app and use your scan:</p>
+            <a href="https://itemvalue.app?code=SINGLE2" class="scan-button">Scan My Item →</a>
+        </div>
+        
+        <div class="upsell-box">
+            <h2>Want to Keep Going?</h2>
+            <p>Most people have 10-20 items worth selling. Unlock more scans and find everything:</p>
+            <div class="upsell-options">
+                <a href="https://buy.stripe.com/cNi00j0vPcEObGF7h98bS01" class="upsell-link">
+                    25 scans — <span class="price">$7</span>
+                </a>
+                <a href="https://buy.stripe.com/fZudR92DX5cmh0Zatl8bS00" class="upsell-link">
+                    100 scans + full declutter system — <span class="price">$27</span>
+                </a>
+            </div>
+        </div>
+        
+        <p class="help-text">Questions? <a href="mailto:hello@itemvalue.app">hello@itemvalue.app</a></p>
+    </div>
+</body>
+</html>
