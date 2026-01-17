@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <!-- Google Analytics -->
+    <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PXG6EEVC0"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -27,18 +27,11 @@ src="https://www.facebook.com/tr?id=1383551356849358&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code --> <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Declutter to Cash Challenge | Turn Your Clutter Into Money This Week</title>
-    <meta name="description" content="Join the 5-day challenge and learn exactly how to turn the stuff in your home into real cash. Includes 100 Item Value scans, templates, and step-by-step guidance.">
+    <title>Declutter to Cash Challenge - Turn Your Clutter into $500+ in 5 Days</title>
+    <meta name="description" content="Join the 5-day challenge that shows you exactly how to find, price, and sell items in your home. Includes 100 Item Value app scans, templates, and step-by-step guidance.">
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="Declutter to Cash Challenge">
-    <meta property="og:description" content="Turn your clutter into cash in just 5 days. Stop guessing what's worth selling.">
-    <meta property="og:type" content="website">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
         * {
@@ -46,598 +39,634 @@ src="https://www.facebook.com/tr?id=1383551356849358&ev=PageView&noscript=1"
             padding: 0;
             box-sizing: border-box;
         }
-
-        :root {
-            --cream: #FDF8F3;
-            --cream-dark: #F5EDE4;
-            --warm-brown: #8B7355;
-            --dark-brown: #5C4A3A;
-            --accent-gold: #C9A86C;
-            --text-dark: #3D3229;
-            --text-medium: #6B5D4D;
-            --white: #FFFFFF;
-        }
-
+        
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--cream);
-            color: var(--text-dark);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
+            color: #2c3e50;
+            background-color: #fdf6e3;
         }
-
+        
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 0 20px;
         }
-
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .guarantee {
+            background: rgba(255,255,255,0.2);
+            padding: 8px 15px;
+            border-radius: 25px;
+            font-size: 14px;
+            backdrop-filter: blur(10px);
+        }
+        
         /* Hero Section */
         .hero {
-            padding: 60px 0 50px;
-            text-align: center;
-        }
-
-        .badge {
-            display: inline-block;
-            background: var(--accent-gold);
-            color: var(--white);
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            margin-bottom: 24px;
-            text-transform: uppercase;
-        }
-
-        h1 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: clamp(36px, 6vw, 52px);
-            font-weight: 700;
-            color: var(--dark-brown);
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
-
-        .subtitle {
-            font-size: 20px;
-            color: var(--text-medium);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Problem Section */
-        .problem {
-            background: var(--white);
-            padding: 50px 0;
-            border-top: 1px solid var(--cream-dark);
-            border-bottom: 1px solid var(--cream-dark);
-        }
-
-        .problem-text {
-            font-size: 18px;
-            color: var(--text-medium);
-            max-width: 650px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .problem-text p {
-            margin-bottom: 20px;
-        }
-
-        .problem-text p:last-child {
-            margin-bottom: 0;
-        }
-
-        .highlight {
-            color: var(--dark-brown);
-            font-weight: 500;
-        }
-
-        /* Solution Section */
-        .solution {
             padding: 60px 0;
+            background: linear-gradient(to bottom, #fdf6e3 0%, #fff9ec 100%);
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
-
-        h2 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: clamp(28px, 4vw, 36px);
-            font-weight: 600;
-            color: var(--dark-brown);
-            margin-bottom: 24px;
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
         }
-
-        .solution-text {
-            font-size: 18px;
-            color: var(--text-medium);
-            max-width: 600px;
-            margin: 0 auto 30px;
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            animation: fadeInUp 0.8s ease;
         }
-
-        /* Secret Weapon */
-        .secret-weapon {
-            background: linear-gradient(135deg, var(--dark-brown) 0%, var(--warm-brown) 100%);
-            padding: 50px 0;
-            text-align: center;
-            color: var(--white);
+        
+        .hero .subheadline {
+            font-size: 22px;
+            color: #546e7a;
+            margin-bottom: 30px;
+            animation: fadeInUp 0.8s ease 0.2s both;
         }
-
-        .secret-weapon h2 {
-            color: var(--white);
-            margin-bottom: 16px;
-        }
-
-        .secret-weapon p {
-            font-size: 18px;
-            opacity: 0.95;
-            max-width: 550px;
-            margin: 0 auto;
-        }
-
-        .app-highlight {
-            color: var(--accent-gold);
-            font-weight: 600;
-        }
-
-        /* What's Included */
-        .included {
-            padding: 60px 0;
-        }
-
-        .included h2 {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .included-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .included-item {
-            background: var(--white);
-            padding: 28px;
-            border-radius: 12px;
-            border: 1px solid var(--cream-dark);
+        
+        .value-props {
             display: flex;
-            align-items: flex-start;
-            gap: 16px;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.4s both;
         }
-
-        .included-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--cream);
+        
+        .value-prop {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+        }
+        
+        .check-icon {
+            width: 24px;
+            height: 24px;
+            background: #48bb78;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-shrink: 0;
+            color: white;
+            font-weight: bold;
         }
-
-        .included-icon svg {
-            width: 24px;
-            height: 24px;
-            color: var(--accent-gold);
-        }
-
-        .included-content h3 {
-            font-size: 17px;
-            font-weight: 600;
-            color: var(--dark-brown);
-            margin-bottom: 6px;
-        }
-
-        .included-content p {
-            font-size: 15px;
-            color: var(--text-medium);
-        }
-
-        .value-note {
-            color: var(--accent-gold);
-            font-weight: 500;
-        }
-
-        /* Outcome Section */
-        .outcome {
-            background: var(--cream-dark);
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        .outcome h2 {
-            margin-bottom: 20px;
-        }
-
-        .outcome p {
-            font-size: 18px;
-            color: var(--text-medium);
-            max-width: 550px;
-            margin: 0 auto;
-        }
-
-        /* CTA Section */
-        .cta {
-            padding: 70px 0;
-            text-align: center;
-        }
-
-        .price-box {
-            background: var(--white);
-            border: 2px solid var(--accent-gold);
-            border-radius: 16px;
-            padding: 40px;
-            max-width: 450px;
-            margin: 0 auto 30px;
-        }
-
-        .price-label {
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--text-medium);
-            margin-bottom: 8px;
-        }
-
-        .price {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 56px;
-            font-weight: 700;
-            color: var(--dark-brown);
-            margin-bottom: 8px;
-        }
-
-        .price-note {
-            font-size: 15px;
-            color: var(--text-medium);
-            margin-bottom: 24px;
-        }
-
+        
+        /* CTA Button */
         .cta-button {
             display: inline-block;
-            background: linear-gradient(135deg, var(--accent-gold) 0%, #D4B577 100%);
-            color: var(--white);
-            padding: 18px 48px;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: 600;
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: white;
+            padding: 18px 40px;
+            font-size: 20px;
+            font-weight: bold;
             text-decoration: none;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            box-shadow: 0 4px 15px rgba(201, 168, 108, 0.35);
+            border-radius: 50px;
+            box-shadow: 0 10px 25px rgba(72, 187, 120, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.8s ease 0.6s both;
+            position: relative;
+            overflow: hidden;
         }
-
+        
         .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(201, 168, 108, 0.45);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(72, 187, 120, 0.4);
         }
-
-        .guarantee {
-            margin-top: 24px;
-            font-size: 14px;
-            color: var(--text-medium);
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
         }
-
-        /* FAQ Section */
-        .faq {
-            background: var(--white);
+        
+        .cta-button:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .price-badge {
+            display: inline-block;
+            background: #f56565;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-left: 10px;
+            font-size: 16px;
+            animation: pulse 2s infinite;
+        }
+        
+        /* What's Included Section */
+        .included {
             padding: 60px 0;
-            border-top: 1px solid var(--cream-dark);
+            background: white;
         }
-
-        .faq h2 {
+        
+        .section-title {
             text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+        
+        .included-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
             margin-bottom: 40px;
         }
-
-        .faq-list {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            padding: 24px 0;
-            border-bottom: 1px solid var(--cream-dark);
-        }
-
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-
-        .faq-question {
-            font-weight: 600;
-            color: var(--dark-brown);
-            margin-bottom: 10px;
-            font-size: 17px;
-        }
-
-        .faq-answer {
-            color: var(--text-medium);
-            font-size: 16px;
-        }
-
-        /* Alternative Options */
-        .alternatives {
-            padding: 50px 0;
+        
+        .included-item {
+            background: #fdf6e3;
+            padding: 25px;
+            border-radius: 15px;
             text-align: center;
-            border-top: 1px solid var(--cream-dark);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
         }
-
-        .alternatives h2 {
-            font-size: 24px;
-            margin-bottom: 32px;
+        
+        .included-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-color: #667eea;
         }
-
-        .alt-options {
+        
+        .day-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
             display: flex;
-            flex-wrap: wrap;
+            align-items: center;
             justify-content: center;
-            gap: 20px;
-            max-width: 600px;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 auto 15px;
+        }
+        
+        .included-item h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .included-item p {
+            color: #546e7a;
+            font-size: 14px;
+        }
+        
+        /* What You Get Section */
+        .what-you-get {
+            padding: 60px 0;
+            background: #fdf6e3;
+        }
+        
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .bonus-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .bonus-item h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .bonus-item p {
+            color: #546e7a;
+        }
+        
+        .bonus-value {
+            color: #48bb78;
+            font-weight: bold;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 60px 0;
+            background: white;
+        }
+        
+        .faq-container {
+            max-width: 800px;
             margin: 0 auto;
         }
-
-        .alt-option {
-            background: var(--white);
-            border: 1px solid var(--cream-dark);
-            border-radius: 12px;
-            padding: 24px;
-            flex: 1;
-            min-width: 200px;
-            max-width: 280px;
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 20px;
         }
-
-        .alt-option h3 {
-            font-family: 'Playfair Display', Georgia, serif;
+        
+        .faq-question {
             font-size: 18px;
-            color: var(--dark-brown);
-            margin-bottom: 8px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-
-        .alt-price {
-            font-size: 28px;
-            font-weight: 700;
-            color: var(--accent-gold);
-            margin-bottom: 8px;
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 24px;
+            color: #667eea;
         }
-
-        .alt-description {
-            font-size: 14px;
-            color: var(--text-medium);
-            margin-bottom: 16px;
+        
+        .faq-item.open .faq-question::after {
+            content: '−';
         }
-
-        .alt-link {
-            display: inline-block;
-            color: var(--accent-gold);
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 15px;
+        
+        .faq-answer {
+            color: #546e7a;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
         }
-
-        .alt-link:hover {
-            text-decoration: underline;
+        
+        .faq-item.open .faq-answer {
+            max-height: 200px;
+            margin-top: 10px;
         }
-
+        
+        /* Final CTA */
+        .final-cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            text-align: center;
+            color: white;
+        }
+        
+        .final-cta h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .final-cta p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
         /* Footer */
         footer {
-            background: var(--dark-brown);
-            color: var(--white);
-            padding: 30px 0;
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0 20px;
             text-align: center;
-            font-size: 14px;
-            opacity: 0.9;
         }
-
-        footer a {
-            color: var(--accent-gold);
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: white;
             text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
         }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            .hero {
-                padding: 40px 0 40px;
+        
+        .footer-links a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        
+        .copyright {
+            opacity: 0.6;
+            font-size: 14px;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
             }
-
-            .problem, .solution, .included, .cta {
-                padding: 45px 0;
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
-
-            .price-box {
-                padding: 30px 24px;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
             }
-
-            .price {
-                font-size: 48px;
+            50% {
+                transform: scale(1.05);
             }
-
-            .cta-button {
-                padding: 16px 36px;
-                font-size: 16px;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
             }
-
-            .included-item {
-                padding: 22px;
+            
+            .hero .subheadline {
+                font-size: 18px;
             }
-
-            .alt-options {
+            
+            .value-props {
                 flex-direction: column;
                 align-items: center;
             }
-
-            .alt-option {
-                max-width: 100%;
+            
+            .included-grid {
+                grid-template-columns: 1fr;
             }
+            
+            .bonus-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-button {
+                font-size: 18px;
+                padding: 15px 30px;
+            }
+        }
+        
+        /* Loading animation for page entrance */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in-section.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
 <body>
-    <!-- Hero -->
-    <section class="hero">
+    <!-- Header -->
+    <header>
         <div class="container">
-            <span class="badge">5-Day Challenge</span>
-            <h1>Turn Your Clutter Into Cash This Week</h1>
-            <p class="subtitle">Stop guessing what's worth selling. Start making money from the stuff already in your home.</p>
-        </div>
-    </section>
-
-    <!-- Problem -->
-    <section class="problem">
-        <div class="container">
-            <div class="problem-text">
-                <p>You've got stuff sitting around your house that could be money in your pocket — but figuring out what's actually worth selling feels like a second job.</p>
-                <p>Is that old Coach bag worth $20 or $200? Should you bother listing that vintage lamp or just donate it? <span class="highlight">The uncertainty keeps you stuck, so nothing happens.</span></p>
+            <div class="header-content">
+                <a href="/" class="logo">Declutter to Cash</a>
+                <div class="guarantee">✓ Questions? Email hello@itemvalue.app</div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Solution -->
-    <section class="solution">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <h2>This 5-Day Challenge Fixes That</h2>
-            <p class="solution-text">I'll walk you through exactly how to find the hidden cash in your home, know what's worth your time to sell (and what isn't), and get items listed without second-guessing yourself.</p>
-        </div>
-    </section>
-
-    <!-- Secret Weapon -->
-    <section class="secret-weapon">
-        <div class="container">
-            <h2>The Secret Weapon?</h2>
-            <p>My <span class="app-highlight">Item Value app</span>. Scan any item and in 30 seconds you'll know what it's worth and where to sell it. No more Googling, no more guessing, no more "I hope I didn't just give away something valuable."</p>
+            <h1>Turn Your Clutter Into $500+ Cash</h1>
+            <p class="subheadline">Join the 5-Day Challenge That Shows You Exactly What to Sell, Where to Sell It, and How to Price It Right</p>
+            
+            <div class="value-props">
+                <div class="value-prop">
+                    <span class="check-icon">✓</span>
+                    <span>100 Item Value Scans Included</span>
+                </div>
+                <div class="value-prop">
+                    <span class="check-icon">✓</span>
+                    <span>Done-For-You Templates</span>
+                </div>
+                <div class="value-prop">
+                    <span class="check-icon">✓</span>
+                    <span>Platform Cheat Sheet</span>
+                </div>
+            </div>
+            
+            <a href="#purchase" class="cta-button">
+                Get Instant Access
+                <span class="price-badge">Only $27</span>
+            </a>
+            
+            <p style="margin-top: 20px; font-size: 14px; color: #7f8c8d;">
+                ⏱️ 15-30 minutes per day<br>
+                💰 Average participant finds $200-500 worth of sellable items
+            </p>
         </div>
     </section>
 
     <!-- What's Included -->
-    <section class="included">
+    <section class="included fade-in-section">
         <div class="container">
-            <h2>What's Included</h2>
+            <h2 class="section-title">Your 5-Day Action Plan</h2>
+            
             <div class="included-grid">
                 <div class="included-item">
-                    <div class="included-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                        </svg>
-                    </div>
-                    <div class="included-content">
-                        <h3>5 Days of Quick Lessons</h3>
-                        <p>Actionable steps you can do in 10-15 minutes a day. No fluff, just results.</p>
-                    </div>
+                    <div class="day-number">1</div>
+                    <h3>The Money Hunt</h3>
+                    <p>Find $500+ hiding in your home in 15 minutes. Learn which rooms have the highest-value items.</p>
                 </div>
+                
                 <div class="included-item">
-                    <div class="included-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" />
-                        </svg>
-                    </div>
-                    <div class="included-content">
-                        <h3>100 Item Value Scans</h3>
-                        <p>Know instantly what your items are worth. <span class="value-note">A $17 value included free.</span></p>
-                    </div>
+                    <div class="day-number">2</div>
+                    <h3>Where to Sell What</h3>
+                    <p>Match each item to the right platform. Facebook vs eBay vs Poshmark - know exactly where things sell fastest.</p>
                 </div>
+                
                 <div class="included-item">
-                    <div class="included-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
-                        </svg>
-                    </div>
-                    <div class="included-content">
-                        <h3>"What Sells Where" Cheat Sheet</h3>
-                        <p>Know exactly which platform to use for every type of item.</p>
-                    </div>
+                    <div class="day-number">3</div>
+                    <h3>List It to Sell It</h3>
+                    <p>Your first 3 listings go live today using our proven templates. Copy, paste, customize, done.</p>
                 </div>
+                
                 <div class="included-item">
-                    <div class="included-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                        </svg>
-                    </div>
-                    <div class="included-content">
-                        <h3>Done-For-You Listing Templates</h3>
-                        <p>Copy, paste, and customize. List items in minutes, not hours.</p>
-                    </div>
+                    <div class="day-number">4</div>
+                    <h3>Photos That Sell</h3>
+                    <p>Phone-only photo tricks that make buyers click "buy." No equipment needed.</p>
+                </div>
+                
+                <div class="included-item">
+                    <div class="day-number">5</div>
+                    <h3>Sell Faster + Scale</h3>
+                    <p>Handle buyers like a pro, get paid safely, and build a 15-minute weekly habit for ongoing cash.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Outcome -->
-    <section class="outcome">
+    <!-- What You Get -->
+    <section class="what-you-get fade-in-section">
         <div class="container">
-            <h2>By the End of the Week...</h2>
-            <p>You'll have items listed at prices you feel good about — and you'll actually enjoy letting go of the rest, knowing you made the right call.</p>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta">
-        <div class="container">
-            <div class="price-box">
-                <p class="price-label">Join the Challenge</p>
-                <p class="price">$27</p>
-                <p class="price-note">One-time payment. Lifetime access.</p>
-                <a href="https://buy.stripe.com/fZudR92DX5cmh0Zatl8bS00" class="cta-button">I'm Ready to Declutter to Cash</a>
-            </div>
-            <p class="guarantee">Questions? Email me at hello@itemvalue.app</p>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq">
-        <div class="container">
-            <h2>Questions? I've Got Answers.</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <p class="faq-question">How long are the daily lessons?</p>
-                    <p class="faq-answer">Each lesson takes about 10-15 minutes. The actions might take a bit longer depending on how much stuff you're working with, but I've designed this to fit into a busy schedule.</p>
+            <h2 class="section-title">Everything You Get</h2>
+            
+            <div class="bonus-grid">
+                <div class="bonus-item">
+                    <h3>📱 100 Item Value App Scans</h3>
+                    <p>Know exactly what your items are worth in 30 seconds. No more guessing or hours of research.</p>
+                    <p class="bonus-value">$17 value - included free</p>
                 </div>
-                <div class="faq-item">
-                    <p class="faq-question">What if I miss a day?</p>
-                    <p class="faq-answer">No problem — you have lifetime access. Go at your own pace. The 5-day structure is there to give you momentum, but life happens.</p>
+                
+                <div class="bonus-item">
+                    <h3>📋 "What Sells Where" Cheat Sheet</h3>
+                    <p>Our platform-by-platform guide shows you exactly where each type of item sells best and fastest.</p>
+                    <p class="bonus-value">Saves hours of trial and error</p>
                 </div>
-                <div class="faq-item">
-                    <p class="faq-question">Do I need to be tech-savvy?</p>
-                    <p class="faq-answer">Not at all. If you can take a photo with your phone, you can use the Item Value app. Everything else is straightforward and I walk you through it step by step.</p>
-                </div>
-                <div class="faq-item">
-                    <p class="faq-question">What if I use all 100 scans?</p>
-                    <p class="faq-answer">That means you're making great progress! You can always purchase additional scans through the Item Value app if you need more.</p>
+                
+                <div class="bonus-item">
+                    <h3>📝 Done-For-You Listing Templates</h3>
+                    <p>Copy-paste templates for clothes, electronics, home goods, and more. Just fill in the blanks.</p>
+                    <p class="bonus-value">Get items listed in minutes</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Alternative Options -->
-    <section class="alternatives">
+    <!-- FAQ Section -->
+    <section class="faq fade-in-section">
         <div class="container">
-            <h2>Not Ready for the Full Challenge?</h2>
-            <div class="alt-options">
-                <div class="alt-option">
-                    <h3>Just Curious?</h3>
-                    <div class="alt-price">$2</div>
-                    <p class="alt-description">Scan one item and see exactly what it's worth. Perfect if you have something specific you're wondering about.</p>
-                    <a href="https://buy.stripe.com/dRm6oHbat5cm6ml6d58bS02" class="alt-link">Try 1 Scan →</a>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">How much time does this really take?</div>
+                    <div class="faq-answer">Each daily module takes 15-30 minutes to complete. Most people spend a bit more because they get excited once they start finding valuable items!</div>
                 </div>
-                <div class="alt-option">
-                    <h3>Starter Pack</h3>
-                    <div class="alt-price">$7</div>
-                    <p class="alt-description">25 scans to explore what's hiding in your home. Great for a quick closet cleanout.</p>
-                    <a href="https://buy.stripe.com/cNi00j0vPcEObGF7h98bS01" class="alt-link">Get 25 Scans →</a>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What if we don't have valuable stuff?</div>
+                    <div class="faq-answer">That's what everyone thinks! The average home has $200-500 worth of sellable items. We show you exactly where to look - it's often stuff you forgot you had.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do we need to be tech-savvy to sell online?</div>
+                    <div class="faq-answer">Not at all! We give you step-by-step instructions with screenshots and templates. If you can send an email, you can do this.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do the 100 Item Value scans work?</div>
+                    <div class="faq-answer">Once you purchase, you'll get a special link that adds 100 scans to your Item Value app account. Use them to instantly check prices on anything you're considering selling.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is this a one-time payment?</div>
+                    <div class="faq-answer">Yes! $27 gets you lifetime access to all challenge materials, templates, and your 100 Item Value scans never expire.</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="purchase">
+        <div class="container">
+            <h2>Ready to Turn Your Clutter Into Cash?</h2>
+            <p>Join hundreds who've discovered money hiding in their homes</p>
+            
+            <a href="#" class="cta-button" onclick="handlePurchase()" style="background: white; color: #667eea;">
+                Get Instant Access for $27
+            </a>
+            
+            <p style="margin-top: 20px; font-size: 14px; opacity: 0.9;">
+                ✓ Instant access to all 5 days<br>
+                ✓ 100 Item Value app scans included<br>
+                ✓ Cheat sheet & templates included<br>
+                ✓ Email support at hello@itemvalue.app
+            </p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 <a href="https://itemvalue.app">Item Value</a>. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/terms">Terms & Conditions</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/refund">Refund Policy</a>
+                <a href="mailto:hello@itemvalue.app">Contact Support</a>
+                <a href="https://itemvalue.app">Item Value App</a>
+            </div>
+            <p class="copyright">© 2026 Elaro Digital Edge. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('open');
+            });
+        });
+        
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.fade-in-section').forEach(section => {
+            observer.observe(section);
+        });
+        
+        // Purchase handler (replace with your actual payment integration)
+        function handlePurchase() {
+            // This is where you'd integrate your Stripe payment link
+            // For now, using a placeholder
+            alert('Replace this with your Stripe payment link for the $27 Declutter to Cash Challenge');
+            // window.location.href = 'your-stripe-payment-link-here';
+        }
+    </script>
 </body>
 </html>
