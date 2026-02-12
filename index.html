@@ -144,6 +144,30 @@ src="https://www.facebook.com/tr?id=1383551356849358&ev=PageView&noscript=1"
             font-weight: bold;
         }
         
+        /* As Seen On Badge */
+        .as-seen-on {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            padding: 16px 0 8px;
+            width: 100%;
+        }
+        .as-seen-on__image {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            opacity: 0.85;
+            transition: opacity 0.3s ease;
+        }
+        .as-seen-on__image:hover {
+            opacity: 1;
+        }
+        @media (max-width: 768px) {
+            .as-seen-on__image { max-width: 240px; }
+        }
+        
         /* CTA Button */
         .cta-button {
             display: inline-block;
@@ -488,6 +512,10 @@ src="https://www.facebook.com/tr?id=1383551356849358&ev=PageView&noscript=1"
                     <span>Platform Cheat Sheet</span>
                 </div>
             </div>
+
+            <div class="as-seen-on">
+                <img src="/as-seen-on-badge.png" alt="As Seen On CBS, NBC, ABC and over 250 news outlets" class="as-seen-on__image" loading="lazy">
+            </div>
             
            <a href="https://buy.stripe.com/fZudR92DX5cmh0Zatl8bS00" class="cta-button">
     Get Instant Access
@@ -656,6 +684,7 @@ src="https://www.facebook.com/tr?id=1383551356849358&ev=PageView&noscript=1"
             observer.observe(section);
         });
         
+        }
     </script>
 </body>
 </html>
